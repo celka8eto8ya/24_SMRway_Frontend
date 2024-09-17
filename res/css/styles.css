@@ -1,0 +1,637 @@
+/* * {
+  padding: 0%;
+  margin: 0%;
+} */
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Qwitcher+Grypen:wght@400;700&display=swap"); */
+/* @font-face {
+  font-family: "Poppins";
+  src: url("/res/fonts/Poppins-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+} */
+/* @font-face {
+  font-family: "Poppins";
+  src: url("/res//fonts/Poppins-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+} */
+
+/* .fonts {
+  font-family: "Poppins";
+} */
+.main_link {
+  font-family: Consolas;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  height: 30px;
+  text-decoration: none; /*Убираем стандартное подчёркивание ссылки если оно ещё не убрано*/
+  display: inline-block; /*делаем чтобы наша ссылка из строчного элемента превратилась в строчно-блочный*/
+  line-height: 1; /*Задаём высоту строки (можно в пикселях)*/
+  color: #edcb33; /*Задаём цвет ссылки*/
+  border: 2px solid;
+  padding: 20px;
+}
+.main_link:after {
+  display: block; /*превращаем его в блочный элемент*/
+  content: ""; /*контента в данном блоке не будет поэтому в кавычках ничего не ставим*/
+  height: 3px; /*задаём высоту линии*/
+  width: 0%; /*задаём начальную ширину элемента (линии)*/
+  background-color: #b380b5; /*цвет фона элемента*/
+  transition: width 1s linear; /*данное свойство отвечает за плавное изменение ширины. Здесь можно задать время анимации в секундах (в данном случае задано 0.4 секунды)*/
+}
+
+.link a:hover:after,
+.link a:focus:after {
+  width: 100%;
+}
+a {
+  text-decoration: none; /*Убираем стандартное подчёркивание ссылки если оно ещё не убрано*/
+  display: inline-block; /*делаем чтобы наша ссылка из строчного элемента превратилась в строчно-блочный 
+    line-height: 1; /*Задаём высоту строки (можно в пикселях)*/
+  color: #59e7c8; /*Задаём цвет ссылки*/
+}
+a:after {
+  display: block; /*превращаем его в блочный элемент*/
+  content: ""; /*контента в данном блоке не будет поэтому в кавычках ничего не ставим*/
+  height: 3px; /*задаём высоту линии*/
+  width: 0%; /*задаём начальную ширину элемента (линии)*/
+  background-color: #a784b5; /*цвет фона элемента*/
+  transition: width 2s linear; /*данное свойство отвечает за плавное изменение ширины. Здесь можно задать время анимации в секундах (в данном случае задано 0.4 секунды)*/
+}
+a:hover:after,
+a:focus:after {
+  width: 100%;
+}
+a:hover {
+  color: #65e7e3;
+}
+header {
+  width: 100vw;
+}
+.main_div {
+  display: block;
+  /* background: rgb(106, 182, 199); */
+  align-items: center;
+
+  width: 220px;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 25px;
+}
+.content_div {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-top: 10px;
+  /* background-color: bisque; */
+  border-radius: 10px;
+}
+
+.body {
+  background: #ae8cc3;
+  background-image: url("https://avatars.mds.yandex.net/i?id=8b2ffc0ca35e71a973d6b44daa8eac3d_l-8224882-images-thumbs&ref=rim&n=13&w=1920&h=1080");
+  background-size: cover;
+}
+
+.body1 {
+  background: #ae8cc3;
+  background-image: url("https://i.pinimg.com/originals/6b/b8/bf/6bb8bfc93f4d236c5cb8446c4ed2f5fe.jpg");
+  background-size: inherit;
+}
+
+.body_css {
+  background: #ae8cc3;
+  background-image: url("https://i.ytimg.com/vi/AdyAXSC1bRY/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGCogWSh_MA8=&amp;rs=AOn4CLBdnyCJAShDKPAisSN-ulhDhaa_IQ");
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  /* opacity: 1  ; */
+}
+.all_blur {
+  backdrop-filter: blur(4px);
+  display: block;
+  width: 100vw;
+  /* height: 100vh; */
+}
+
+.img {
+  background-size: cover;
+  float: left;
+  margin-right: 10px;
+  height: 300px;
+  width: 300px;
+}
+.img1 {
+  background-image: url("https://zefirka.club/uploads/posts/2022-11/1667338154_1-zefirka-club-p-pikselnie-risunki-anime-1.png");
+}
+
+.div_img {
+  margin-top: 50px;
+  display: block;
+  height: 400px;
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.div_img1 > p {
+  color: #b380b5;
+}
+
+.div_img2 > p {
+  color: #ba4c7a;
+}
+.img2 {
+  background-image: url("https://furman.top/uploads/posts/2023-05/1683287876_furman-top-p-pikselnii-zamok-fon-instagram-57.png");
+}
+ol > li {
+  color: antiquewhite;
+  font-size: 20px;
+}
+ul > li {
+  color: rgb(167, 118, 54);
+  font-size: 30px;
+}
+h2 {
+  display: inline-block;
+  border: solid 2px;
+  padding: 10px;
+  color: rgb(141, 247, 224);
+}
+
+details {
+  display: block;
+  height: 400px;
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow-x: hidden;
+}
+details > summary {
+  font-size: 50px;
+  color: rgb(245, 223, 194);
+}
+details li {
+  font-size: 40px;
+  color: rgb(185, 133, 225);
+}
+
+.table_div {
+  display: block;
+}
+table {
+  font-size: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #edcb33;
+  /* border: solid 3px; */
+}
+
+td {
+  border: 2px solid #edcb33;
+}
+
+.img_link {
+  width: 300;
+  height: 200px;
+  background-size: cover;
+}
+.div_iframe {
+  width: 1000px;
+  height: 600px;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.div_iframe > h2 {
+  width: 170px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+iframe {
+  width: 99%;
+  height: 99%;
+}
+
+.p_1 {
+  /* color: rgb(225, 210, 189); */
+  font-family: "Jersey10";
+  font-size: 40px;
+  background-image: linear-gradient(to left, #654965, #eec4f3);
+  color: transparent;
+  background-clip: text;
+  padding-left: 100px;
+  padding-right: 100px;
+  text-align: justify;
+  text-indent: 35px;
+}
+.p_1_1 {
+  text-shadow: 3px -2px 1px #e5d8d8;
+}
+
+.message_container {
+  display: block;
+  width: 100%vw;
+  height: 100%vh;
+}
+.message {
+  margin-top: 50px;
+  font-weight: 600;
+  width: 200px;
+  background-color: rgb(15, 76, 155);
+  height: 40px;
+  font-size: 20px;
+  font-family: BungeeTint;
+  line-height: 40px;
+  text-align: center;
+  vertical-align: middle;
+
+  border-radius: 10px;
+  border-bottom-left-radius: 0px;
+  color: #b1da36;
+  margin-left: auto;
+  margin-right: auto;
+  transition: all 1.5s;
+}
+.message:hover {
+  color: #f75ce5;
+  transform: scale(110%);
+}
+.message::after {
+  content: "";
+  width: 0%; /*задаём начальную ширину элемента (линии)*/
+  background-color: #a784b5; /*цвет фона элемента*/
+  transition: all 1.5s linear; /*данное свойство отвечает за плавное изменение ширины. Здесь можно задать время анимации в секундах (в данном случае задано 0.4 секунды)*/
+  display: block;
+  border: solid 0px #f75ce5;
+}
+.message:hover::after {
+  border: solid 1px #f75ce5;
+  width: 95%;
+}
+
+.display_var {
+  font-size: 30px;
+  color: #11bc0e;
+  display: block;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 95vw;
+  height: 300px;
+  block-size: border-box;
+}
+.borders {
+  margin: 3px;
+  border: solid 2px #e47474;
+}
+.disp_inl {
+  display: inline;
+  background-color: #65e7e3;
+}
+
+.disp_inl-bl {
+  display: inline-block;
+  background-color: #65e7e3;
+}
+.disp_li-it {
+  display: list-item;
+  background-color: #65e7e3;
+}
+.disp_bl {
+  display: block;
+  background-color: #65e7e3;
+}
+.disp_run {
+  display: run-in;
+  background-color: #65e7e3;
+}
+.disp_flex {
+  display: flex;
+  background-color: #65e7e3;
+}
+
+.disp_in-table {
+  display: inline-table;
+  background-color: #65e7e3;
+}
+.disp_none {
+  display: none;
+  background-color: #65e7e3;
+}
+
+.wrapper_trans {
+  position: relative;
+  width: 100%;
+  height: 400px;
+}
+.div_trans {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  left: 0%;
+  right: 0%;
+  margin: 0 auto;
+  background-color: #11bc0e;
+  color: #df75d6;
+  top: calc(50%-200px);
+  top: 50%;
+  transform: translate(0, -50%);
+  line-height: 190px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  text-shadow: #ba4c7a 3px 3px 2px;
+  border: solid 2px #65e7e3;
+  border-radius: 10px;
+  transition: all 0.8s linear;
+}
+
+.div_trans::before {
+  content: "<@";
+}
+.div_trans::after {
+  content: "@>";
+}
+
+.div_trans:hover {
+  background-color: #df75d6;
+  color: #11bc0e;
+  text-shadow: #464c46 2px 3px 2px;
+  transform-origin: center;
+  /* transform: rotate(90deg) translate(-100px, -100px); */
+  transform: rotate(90deg) translate(-100px, -0px) scale(80%);
+}
+
+@keyframes backgroundColorAnimation {
+  0% {
+    background-color: rgb(250, 62, 62);
+    background-image: linear-gradient(to left, #b40505, #d77e7e);
+    transform-origin: center;
+    /* transform: rotate(90deg) translate(-100px, - 100px); */
+    transform: rotate(0deg) translate(0px, -0px);
+  }
+  25% {
+    background-color: rgb(247, 179, 53);
+    background-image: linear-gradient(to left, #a99516, #ede38e);
+    transform-origin: center;
+    /* transform: rotate(90deg) translate(-100px, -100px); */
+    transform: rotate(1800deg) translate(0px, -0px);
+  }
+  50% {
+    background-color: rgb(248, 248, 61);
+    background-image: linear-gradient(to left, #a29d31, #22ae12);
+    transform-origin: center;
+    /* transform: rotate(90deg) translate(-100px, -100px); */
+    transform: rotate(3600deg) translate(0px, -0px);
+  }
+  75% {
+    background-color: rgb(75, 254, 75);
+    background-image: linear-gradient(to left, #fc1313, #a7e78f);
+    transform-origin: center;
+    /* transform: rotate(90deg) translate(-100px, -100px); */
+    transform: rotate(5400deg) translate(0px, -0px);
+  }
+  100% {
+    background-color: rgb(252, 78, 78);
+    background-image: linear-gradient(to left, #fc1313, #d77e7e);
+    transform-origin: center;
+    /* transform: rotate(90deg) translate(-100px, -100px); */
+    transform: rotate(7200deg) translate(0px, -0px);
+  }
+}
+
+.div_test_wrap {
+  width: 100vw;
+  padding-bottom: 100px;
+}
+.div_test_wrap > p {
+  display: block;
+  border: solid 3px #ea51eaa2;
+  font-size: 80px;
+
+  text-decoration: overline #7bc2c3b1;
+  font-family: "Poppins";
+  color: #c7c9db;
+  text-align: center;
+}
+.div_test {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  border: 1px solid #333;
+  background-color: red;
+  transition: all 1s;
+  border-radius: 65px;
+  line-height: 10px;
+  color: #ee8fddd7;
+  font-size: 40px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.div_test:hover {
+  transform: scale(120%);
+  background-color: #000;
+  animation-name: backgroundColorAnimation;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.flex-container {
+  display: flex;
+  width: 100%;
+  margin-top: 50px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.flex-container2 {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-item {
+  color: #ffffff;
+  border: 2px solid #fff;
+  padding: 15px;
+  margin-right: 20px;
+  margin-bottom: 40px;
+  width: 25%;
+}
+.flex-item2 {
+  margin-top: 10px;
+  width: 60%;
+}
+
+.flex-div {
+  display: flex;
+  flex-direction: row;
+  width: 60%;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.flex-item {
+  font-size: 20px;
+  padding: 0;
+  margin: 0;
+  padding: 1.2em;
+  margin: 1.1em;
+  text-align: center;
+}
+.fb_body {
+  background-color: #458583;
+  position: relative;
+  width: 99%;
+}
+.fb_header {
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  justify-content: center;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+}
+.fb_item {
+  display: block;
+  padding: 1.1rem;
+  /* border: solid 2px #22ae12; */
+  /* border-radius: 1.3rem; */
+  /* margin: 1.2rem; */
+  margin: 1px;
+  flex: 1 0 auto;
+  text-align: center;
+  font-size: 1.2rem;
+  height: 3rem;
+  line-height: 3rem;
+  color: #f6f6f6;
+}
+.fb_it1 {
+  background-color: #47bce0;
+}
+.fb_it2 {
+  background-color: #4fdf4f;
+}
+.fb_it3 {
+  background-color: #e8c64d;
+}
+.fb_it4 {
+  background-color: #4247e3;
+}
+.fb_it5 {
+  background-color: #df6d39;
+}
+.fb_it6 {
+  background-color: #bd3ac2;
+}
+.fb_main {
+  padding-top: 100px;
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  justify-content: space-around;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  background-color: #11bc0e;
+}
+
+.fb_aside {
+  display: flex;
+  flex-direction: column;
+  width: 26%;
+  justify-content: flex-start;
+  right: 0;
+  left: 0;
+  /* margin: 0 auto; */
+  background-color: #11bc0e;
+  flex: 0 1 auto;
+}
+.fb_aside_it {
+  align-items: flex-start;
+  max-height: 4rem;
+  margin-bottom: 2px;
+  background-color: #ed3232;
+  font-size: 1.5rem;
+  line-height: 4rem;
+}
+
+.fb_section {
+  width: 74%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: end;
+}
+
+.fb_article {
+  display: block;
+  width: 95%;
+  align-items: center;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+.fb_article_img {
+  /* padding-left: 40px;
+  padding-right: 40px; */
+
+  background-image: url("https://avatars.mds.yandex.net/i?id=8b2ffc0ca35e71a973d6b44daa8eac3d_l-8224882-images-thumbs&ref=rim&n=13&w=1920&h=1080");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 350px;
+}
+.fb_article_add {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.fb_article_div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1.2rem;
+  font-size: 1rem;
+  width: 43%;
+  padding: 1rem;
+  height: 4rem;
+  color: #ffffff;
+
+  text-align: center;
+  /* justify-items: center; */
+  /* vertical-align: middle; */
+  margin-right: auto 0;
+}
+
+.fb_article_div1 {
+  background-color: #e8c64d;
+}
+.fb_article_div2 {
+  background-color: #48d8f1;
+}
+
+span {
+  align-items: center;
+  vertical-align: middle;
+}

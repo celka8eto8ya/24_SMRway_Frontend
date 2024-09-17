@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <!-- Metadata about file:encoding, author, semantic, file relations etc. -->
+    <meta charset="UTF-8" />
+    <title>Ex. to remember knowledges</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="../res/css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="../res/css/fonts.css" />
+  </head>
+  <body class="body1">
+    <!-- Main link -->
+    <div>
+      <div class="main_div">
+        <div class="content_div"></div>
+        <a class="main_link" href="../HTML/index.html" ;
+          >Main Manu<sup>0</sup></a
+        >
+      </div>
+    </div>
+    <a href="#tfoot">Tables footer - link.</a>
+
+    <!-- Image with flexible text. -->
+    <div class="div_img div_img1">
+      <img class="img img1" />
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis,
+        error! Aspernatur, ex eius fugit corporis, minus aperiam explicabo quos
+        eos totam assumenda officiis quia velit eum non iste voluptate! Ab?
+      </p>
+    </div>
+    <div class="div_img div_img2">
+      <img class="img img2" />
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis,
+        error! Aspernatur, ex eius fugit corporis, minus aperiam explicabo quos
+        eos totam assumenda officiis quia velit eum non iste voluptate! Ab?
+      </p>
+    </div>
+
+    <div class="content_div">
+      <h2>Нумерованный список</h2>
+      <ol>
+        <li>iPhone 6S</li>
+        <li>Galaxy S7</li>
+        <li>Nexus 5X</li>
+        <li>Lumia 950</li>
+      </ol>
+      <h2>Ненумерованный список</h2>
+      <ul>
+        <li>iPhone 6S</li>
+        <li>Galaxy S7</li>
+        <li>Nexus 5X</li>
+        <li>Lumia 950</li>
+      </ul>
+    </div>
+    <!-- Accordion -->
+    <details>
+      <summary>Флагманы 2015</summary>
+      <ul>
+        <li>iPhone 6S Plus</li>
+        <li>Nexus 6P</li>
+        <li>Galaxy S6 Edge</li>
+        <li>Lumia 950 XL</li>
+      </ul>
+      <details>
+        <summary>Флагманы 2015</summary>
+        <ul>
+          <li>iPhone 6S Plus</li>
+          <li>Nexus 6P</li>
+          <li>Galaxy S6 Edge</li>
+          <li>Lumia 950 XL</li>
+        </ul>
+      </details>
+    </details>
+
+    <!-- table with borders and head, body, footer -->
+    <div class="table_div">
+      <table>
+        <thead>
+          <tr>
+            <th>Модель</th>
+            <th>Компания</th>
+            <th>Цена</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Nexus 6P</td>
+            <td>Huawei</td>
+            <td>49000</td>
+          </tr>
+          <tr>
+            <td>iPhone 6S PLus</td>
+            <td>Apple</td>
+            <td>62000</td>
+          </tr>
+          <tr>
+            <td>Lumia 950 XL</td>
+            <td>Microsoft</td>
+            <td>35000</td>
+          </tr>
+        </tbody>
+        <tfoot id="tfoot">
+          <tr>
+            <th colspan="1">ИТОГО:</th>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+
+    <!-- links -->
+    <div class="div_img">
+      <a href="http://metanit.com/web/html5/" target="_blank"
+        >Учебник по HTML5</a
+      >
+      <br />
+      <a href="http://metanit.com/web/html5/" target="_self">Учебник по HTML5</a
+      ><br />
+      <a href="http://metanit.com/web/html5/" target="_parent"
+        >Учебник по HTML5</a
+      ><br />
+      <a href="http://metanit.com/web/html5/" target="_top">Учебник по HTML5</a
+      ><br />
+      <a href="http://metanit.com/web/html5/" target="framename"
+        >Учебник по HTML5</a
+      ><br />
+      <a class="a_img_link" href="index.html">
+        <img
+          class="img_link"
+          src="https://avatars.mds.yandex.net/i?id=5b48394453b4c9b3cb45c0dc91da8340_l-4715391-images-thumbs&n=13"
+          alt="Main page"
+        />
+      </a>
+    </div>
+
+    <!-- iFrame -->
+    <div class="div_iframe">
+      <h2>Weather-Minsk</h2>
+      <iframe src="https://www.gismeteo.ru/weather-minsk-4248/"> </iframe>
+    </div>
+
+    <!-- Forms and it's elemets -->
+    <div class="div_iframe">
+      <form method="get" action="index.html">
+        <input type="text" name="login" />
+        <input type="submit" value="Войти" />
+        <p><input type="text" name="userName" value="Том" readonly /></p>
+        <p>
+          <input type="text" name="userPhone" placeholder="+12345678901" />
+        </p>
+      </form>
+      <!-- Datalist using. -->
+      <form>
+        <p>
+          <input
+            list="phonesList"
+            type="text"
+            name="model"
+            placeholder="Введите модель"
+          />
+        </p>
+        <p>
+          <button type="submit">Отправить</button>
+        </p>
+      </form>
+      <datalist id="phonesList">
+        <option value="iPhone 6S" label="54000" />
+        <option value="Lumia 950">35000</option>
+        <option value="Nexus 5X" />
+      </datalist>
+      <!-- Phone number with pattern. -->
+      <form action="" method="get" id="cusCreate" autocomplete="off">
+        <input
+          type="tel"
+          name="telphone"
+          placeholder="375 33 380 19 67"
+          pattern="[0-9]{3} [0-9]{2} [0-9]{3} [0-9]{2} [0-9]{2}"
+          maxlength="16"
+          title="375 33 380 19 67 is phone number format"
+          required
+        />
+        <label style="font-size: 9px; padding-left: 20px">
+          Eg : 081 222 2224
+        </label>
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+  </body>
+</html>
