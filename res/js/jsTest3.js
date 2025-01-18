@@ -18,7 +18,7 @@ document.getElementById("get").onclick = function () {
     Number(document.getElementById("outputNum2").value);
 };
 
-document.writeln("<h1>Hello, Recall knowleges.</h1>");
+// document.writeln("<h1>Hello, Recall knowleges.</h1>");
 
 let a1 = 10,
   a2 = 52;
