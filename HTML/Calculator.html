@@ -17,33 +17,38 @@
     />
   </head>
   <body class="body-bg">
+    <h1
+      id="hh1"
+      class="text-center text-decoration-underline font-monospace btn-warning"
+    >
+      Funny Calculator.
+    </h1>
     <div>
-      <h1 id="hh1">Hello "Recall knowleges."</h1>
-      <h2>Input</h2>
-      <input type="text" id="inputText" value="10" />
-      <input id="get" type="button" value="Get" />
-      <br />
-      <br />
-      <h2>Output 1 - Number</h2>
-      <input type="number" id="outputNum1" value="7" />
-      <h2>Output 2 - Number</h2>
-      <input type="number" id="outputNum2" value="6" />
-      <h2>Output - Text</h2>
-      <input type="text" id="outputText" value="s7s" />
-      <div id="outputText2">52's</div>
+      <a class="link_back" href="..//HTML/index.html">⇜ Back to start page.</a>
     </div>
-
     <div class="section">
       <div class="flex-container">
-        <div class="flex-item flex-item-screen">
-          <input type="text" id="screen" value="0" />
+        <div class="flex-item-screen">
+          <input
+            class="screen screenHistory"
+            type="text"
+            id="screenHistory"
+            value="0"
+          />
+          <input
+            class="screen screenOperation"
+            type="text"
+            id="screenOperation"
+            value=""
+          />
+          <input class="screen screen-main" type="text" id="screen" value="0" />
         </div>
         <div class="flex-item">
           <input
             class="flex-item1 operator btns btn-danger"
             type="button"
             id="btn_delete"
-            value="del"
+            value="⇽"
           />
           <input
             class="flex-item1 operator btns btn-danger"
@@ -61,7 +66,7 @@
             class="flex-item1 operator btns btn-danger"
             type="button"
             id="btn_division"
-            value="÷"
+            value="/"
           />
         </div>
         <div class="flex-item">
@@ -87,7 +92,7 @@
             class="flex-item1 operator btns btn-danger"
             type="button"
             id="btn_multiply"
-            value="×"
+            value="*"
           />
         </div>
         <div class="flex-item">
@@ -113,7 +118,7 @@
             class="flex-item1 operator btns btn-danger"
             type="button"
             id="btn_minus"
-            value="–"
+            value="-"
           />
         </div>
         <div class="flex-item">
